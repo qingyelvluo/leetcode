@@ -18,9 +18,11 @@ class Solution(object):
         return ''.join(word_list)
 
     def reverseVowels(self, word):
-        """
-        :type s: str
-        :rtype: str
+        """根据输入字符串，返回元音字母反转后字符串
+        Args:
+            word: 输入字符串
+        Returns:
+            元音字母反转后字符串
         """
         vowels = "aeiouAEIOU"
         length = len(word)
