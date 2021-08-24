@@ -1,5 +1,11 @@
 #coding: utf8
 
+'''
+问题说明：未完全理解题目，解题思路错误！
+题目链接：
+https://leetcode-cn.com/problems/reverse-vowels-of-a-string/
+'''
+
 class Solution(object):
 
     def reverse_vowel_core(self, word, vowel_index_list):
