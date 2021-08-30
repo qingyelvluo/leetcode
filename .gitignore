@@ -4,3 +4,4 @@
 .pydevproject
 .pydevproject.bak
 *.pyc
+*.py[cod]
