@@ -1,4 +1,6 @@
+# files which not push to origin
 .project
 .pydevproject
 .settings
+.pydevproject.bak
 *.py[cod]
