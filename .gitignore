@@ -1,4 +1,4 @@
-# exclude file or directory
+# files which not push to origin
 .settings
 .project
 .pydevproject
