@@ -1,5 +1,9 @@
 #coding: utf8
 
+# 代码完美解决问题
+# 使用双指针，从最左、最右相向进行遍历，同时利用python的语法特性，交换赋值时无需中间变量。
+# 需要注意临界条件，如while循环的判断变量不能相等，避免数组索引溢出
+
 class Solution(object):
 
     def reverseVowels(self, word):
