@@ -19,6 +19,7 @@ class Solution(object):
         reverse_str_num = str(x)[::-1]
         if reverse_str_num.endswith("-"):
             # 有符号整数，把"-"放回头部
+            # 反转带符合整数字符串，同时去掉"-"的更优雅写法：reverse_str_num[:0:-1]
             reverse_str_num = "-" + reverse_str_num[-2::-1][::-1]
         reverse_num = int(reverse_str_num)
         left_num_border = -pow(2, 31)
