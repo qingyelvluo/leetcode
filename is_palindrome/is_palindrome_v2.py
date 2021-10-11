@@ -1,13 +1,15 @@
 #coding: utf8
 
+# 解题思路：
+# 利用上一题整数反转的思路，把输入的整数反转，对比反转后的值
+# 关键是整数反转一块的代码，如何理解
+
 class Solution(object):
     def isPalindrome(self, x):
         """
         :type x: int
         :rtype: bool
         """
-        if x == 0:
-            return True
         if x < 0:
             return False
         res = 0
@@ -18,11 +20,9 @@ class Solution(object):
                 res = res*10 + quyu
                 tmp_x = tmp_x // 10
 
-        if res == x:
-            return True
-        else:
-            return False
+        return res == x
 
 if __name__ == "__main__":
     obj = Solution()
-    print(obj.isPalindrome(121))
+    print(obj.isPalindrome(123))
+
