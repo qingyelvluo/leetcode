@@ -127,7 +127,7 @@ if __name__ == "__main__":
     l_list = LinkList()
     l_list.head = n1
     print(l_list.length())
-    l_list.insert(1, 55)
+    l_list.insert(10, 55)
     l_list.append(66)
     print(l_list.length())
     for i in l_list.iter_items():
