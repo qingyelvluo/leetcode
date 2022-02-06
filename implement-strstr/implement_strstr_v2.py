@@ -8,19 +8,20 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         m, n = len(haystack), len(needle)
-        if m < n:
-            return -1
+        if not needle:
+            return 0
         i = 0
+        first_str = needle[0]
         # 注意临界条件
-        while i+n <= m:
-            if haystack[i:i+n] == needle:
-                return i
+        while i + n <= m:
+            if haystack[i] == first_str:
+                if haystack[i:i+n] == needle:
+                    return i
             i += 1
         return -1
-        
 
 if __name__ == "__main__":
-    haystack = "helloelx"
-    needle = "lx"
+    haystack = ""
+    needle = ""
     obj = Solution()
     print(obj.strStr(haystack, needle))
